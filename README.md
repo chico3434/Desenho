@@ -8,4 +8,4 @@ Para rodar é necessário baixar o Love2D.
 Clonar o repositório e executar o Love2D passando como argumento a pasta do repositório.  
 Exemplo:  
 Caso tenha adicionado a Path do Love2D nas variáveis do Sistema e esteja dentro da pasta **Desenho**:  
->love .
+```love .```
