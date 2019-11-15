@@ -14,7 +14,7 @@ Caso tenha adicionado a Path do Love2D nas variáveis do Sistema e esteja dentro
 
 ### Aparência
 Nuvem longe do Sol:  
-![Desenho-Claro](https://github.com/chico3434/Desenho/blob/master/imagens/Desenho-Claro.png "Desenho Claro")
-Nuvem cobrindo pelo menos metade do Sol:
-![Desenho-Escuro](https://github.com/chico3434/Desenho/blob/master/imagens/Desenho-Escuro.png "Desenho Escuro")
+![Desenho-Claro](https://github.com/chico3434/Desenho/blob/master/imagens/Desenho-Claro.png "Desenho Claro")  
+Nuvem cobrindo pelo menos metade do Sol:  
+![Desenho-Escuro](https://github.com/chico3434/Desenho/blob/master/imagens/Desenho-Escuro.png "Desenho Escuro")  
 
