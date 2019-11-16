@@ -6,6 +6,8 @@ end
 -- x da nuvem
 x = 450
 
+fechado = true
+
 function love.update(dt)
   -- mover nuvem para a esquerda
   if love.keyboard.isDown('left') then
@@ -19,6 +21,18 @@ function love.update(dt)
     -- condição para que a nuvem não saia de tela
     if x+50+210 < 800 then
       x = x + dt * 100
+    end
+  end
+  if love.mouse.isDown(1) then
+    if love.mouse.getX() > 325 - 9 and love.mouse.getX() < 325 + 9 and love.mouse.getY() > 425 - 9 and love.mouse.getY() < 425 + 9 then
+      if fechado then 
+        fechado = false 
+      end
+    end
+    if love.mouse.getX() > 350 - 5 and love.mouse.getX() < 350 + 5 and love.mouse.getY() > 425 - 5 and love.mouse.getY() < 425 + 5 then
+      if not fechado then 
+        fechado = true 
+      end
     end
   end
 end
@@ -68,13 +82,27 @@ function love.draw()
   love.graphics.setColor(blue)
   love.graphics.rectangle("fill", 220, 350, 70, 90)
 
-  -- porta 
-  love.graphics.setColor(brown)
-  love.graphics.rectangle("fill", 310, 350, 70, 150)
+  if fechado then
+    -- porta 
+    love.graphics.setColor(brown)
+    love.graphics.rectangle("fill", 310, 350, 70, 150)
 
-  -- maçaneta
-  love.graphics.setColor(black)
-  love.graphics.circle("fill", 325, 425, 9, 9)
+    -- maçaneta
+    love.graphics.setColor(black)
+    love.graphics.circle("fill", 325, 425, 9, 9)
+  else
+    -- abertura
+    love.graphics.setColor(blue)
+    love.graphics.rectangle("fill", 310, 350, 70, 150)
+
+    -- porta
+    love.graphics.setColor(brown)
+    love.graphics.polygon("fill", 345, 369, 380, 350, 380, 500, 345, 481)
+
+    -- maçaneta
+    love.graphics.setColor(black)
+    love.graphics.circle("fill", 350, 425, 5, 5)
+  end
 
   -- sol
   love.graphics.setColor(yellow)
