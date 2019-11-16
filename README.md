@@ -12,9 +12,16 @@ Caso tenha adicionado a Path do Love2D nas variáveis do Sistema e esteja dentro
   love .
 ```
 
-### Aparência
+## Como usar  
+### Movimento da nuvem  
+Para movimentar a nuvem basta usar as setas direcionais **esquerda** e **direita**.  
 Nuvem longe do Sol:  
 ![Desenho-Claro](https://github.com/chico3434/Desenho/blob/master/imagens/Desenho-Claro.png "Desenho Claro")  
 Nuvem cobrindo pelo menos metade do Sol:  
 ![Desenho-Escuro](https://github.com/chico3434/Desenho/blob/master/imagens/Desenho-Escuro.png "Desenho Escuro")  
+### Abrir e fechar a porta  
+Para abrir a porta basta clicar com o botão **esquerdo** do mouse na maçaneta da porta.  
+Porta da casa aberta:  
+![Desenho-Porta-Aberta](https://github.com/chico3434/Desenho/blob/master/imagens/Desenho-Porta-Aberta.png "Desenho com a porta aberta")  
+Para fechar a porta também basta clicar com o botão **esquerdo** do mouse na maçaneta da porta.  
 
