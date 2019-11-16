@@ -5,21 +5,21 @@ end
 
 -- x da nuvem
 x = 450
--- direcao da nuvem
-left = true
 
 function love.update(dt)
-  if x-50 < 0 then
-    left = false
-  end
-  if x+50+210 > 800 then
-    left = true
-  end
-
-  if left then
-    x = x - dt * 100
-  else 
-    x = x + dt * 100
+  -- mover nuvem para a esquerda
+  if love.keyboard.isDown('left') then
+    -- condição para que a nuvem não saia da tela
+    if x-50 > 0 then
+      x = x - dt * 100
+    end
+  end   
+  -- mover nuvem para a direita
+  if love.keyboard.isDown('right') then
+    -- condição para que a nuvem não saia de tela
+    if x+50+210 < 800 then
+      x = x + dt * 100
+    end
   end
 end
 
